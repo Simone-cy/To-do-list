@@ -1,0 +1,87 @@
+/* Modalità chiara */
+.light-mode {
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+.light-mode button {
+  background-color: #0F5D49;
+  color: #fff;
+}
+
+.light-mode button:hover {
+  background-color: #0C4A3A;
+}
+
+/* Modalità scura */
+.dark-mode {
+  background-color: #333;
+  color: #f4f4f9;
+}
+
+.dark-mode button {
+  background-color: #0F5D49;
+  color: #fff;
+}
+
+.dark-mode button:hover {
+  background-color: #0C4A3A;
+}
+
+/* Stili generali per l'intera pagina */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Stili specifici per la To-Do List */
+.todo-list {
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 600px;
+  width: 100%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.todo-list h1 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.todo-list input {
+  padding: 10px;
+  margin: 5px 0;
+  width: calc(100% - 22px);
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.todo-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.todo-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: inherit;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Pulsanti di rimozione */
+.todo-list li button:last-child {
+  background-color: transparent; /* Sfondo trasparente per adattarsi allo sfondo della pagina */
+  color: inherit; /* Colore del testo coerente con il tema attivo */
+  cursor: pointer; /* Cambia il cursore a "pointer" */
+  font-size: 1.2rem; /* Dimensione del testo per l'emoji */
+}
