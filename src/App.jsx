@@ -21,9 +21,3 @@ function App() {
 }
 
 export default App
-{/* <WelcomeMessage message={'Hello, Vite + React!'} title={true} />
-      <WelcomeMessage message={'bella a tutti'} />
-      <WelcomeMessage />
-      <Counter start={0}/>
-      <Counter start={0}/>
-      <RandomUser /> */}
